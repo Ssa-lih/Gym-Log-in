@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the LU</h1>
+        <form action="#" method="POST" class="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="membership-options">
+                <h2>Choose your Membership</h2>
+                <label>
+                    <input type="radio" name="membership" value="basic" required>
+                    Basic Plan ($20/month)
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="premium" required>
+                    Premium Plan ($40/month)
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="vip" required>
+                    VIP Plan ($60/month)
+                </label>
+            </div>
+            <div class="form-footer">
+                <button type="submit" class="submit-btn">Login</button>
+            </div>
+            <div class="new">
+                <p>New here? <a href="http://127.0.0.1:3000/Create.html">Create New Account!</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

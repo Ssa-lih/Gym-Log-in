@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #4f4f55, #4848cccc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+
+.container-age {
+    text-align: left;
+}
+.input-group input:focus {
+    border-color: #6c63ff;
+    background-color: #fff;
+}
+
+
+.membership-options {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+
+.membership-options h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.membership-options label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.membership-options input {
+    margin-right: 10px;
+}
+
+
+.membership-options label:hover {
+    color: #6c63ff;
+}
+
+
+.form-footer {
+    text-align: center;
+}
+
+
+.submit-btn {
+    padding: 15px 25px;
+    background-color: #6c63ff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+
+.submit-btn:hover {
+    background-color: #5a52e0;
+}
+
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+
+    .membership-options h2 {
+        font-size: 16px;
+    }
+
+
+    .submit-btn {
+        font-size: 16px;
+    }
+}
